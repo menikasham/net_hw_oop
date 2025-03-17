@@ -23,7 +23,7 @@ class Student:
         return avg_r
 
     def __str__(self):
-        print(f'Имя{self.name}\nФамилия{self.surname}\nСредняя оценка за домашние задания:{self.avg_rate}\n'
+        return (f'Имя{self.name}\nФамилия{self.surname}\nСредняя оценка за домашние задания:{self.avg_rate}\n'
               f'Курсы в процессе изучения:{self.courses_in_progress}\nЗавершенные курсы:{self.finished_courses}')
 
 
@@ -40,7 +40,7 @@ class Lecturer(Mentor):
         self.grades = {}
 
     def __str__(self):
-        print(f'Имя:{self.name}\nФамилия:{self.surname}\n"Средняя оценка за лекцию"{self.grades}')
+        return f'Имя:{self.name}\nФамилия:{self.surname}\n"Средняя оценка за лекцию"{self.grades}'
 
 
 class Rewiewer(Mentor):
@@ -57,4 +57,4 @@ class Rewiewer(Mentor):
             return 'Ошибка'
 
     def __str__(self):
-        print(f'Имя:{self.name}\nФамилия:{self.surname}')
+        return f'Имя:{self.name}\nФамилия:{self.surname}'
